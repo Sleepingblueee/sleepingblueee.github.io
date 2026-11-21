@@ -1,0 +1,351 @@
+/* Page and text */
+body {
+  max-width: 52rem;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 1.5rem 4rem;
+  background-color: #fff;
+  color: #262626;
+  font-family: "TikTok Sans Text", "Segoe UI", Arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+p {
+  margin: 0 0 0.9em;
+  font-family: inherit;
+  font-size: 1em;
+}
+
+h1, h2, .profile-name, nav a {
+  font-family: "Gotham", "Segoe UI", Arial, sans-serif;
+}
+
+h1, h2 {
+  margin: 0;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+h1 {
+  margin-bottom: 1.15rem;
+  font-size: 2em;
+}
+
+h2 {
+  margin-bottom: 0.78rem;
+  font-size: 1.42em;
+}
+
+a {
+  text-decoration-thickness: 0.07em;
+  text-underline-offset: 0.16em;
+}
+
+a:link {
+  color: #0A3458;
+  text-decoration-color: #999;
+}
+
+a:visited {
+  color: #0A3458;
+  text-decoration-color: #0A3458;
+}
+
+a:hover {
+  text-decoration-color: #0A3458;
+  text-decoration-thickness: 0.14em;
+}
+
+a:active {
+  text-decoration-style: double;
+}
+
+a:focus-visible {
+  outline: 0.14rem solid #0A3458;
+  outline-offset: 0.2rem;
+}
+
+::selection {
+  background-color: #0A3458;
+  color: #fff;
+}
+
+/* Show the shortcut when someone tabs to it. */
+.skip-link {
+  position: absolute;
+  top: -5em;
+  left: 0.4rem;
+  z-index: 1;
+  padding: 0.35em 0.75em;
+  background-color: #fff;
+}
+
+.skip-link:focus {
+  top: 0.3rem;
+}
+
+/* The photo floats beside the profile. The menu clears both columns. */
+header {
+  padding-top: 1.9rem;
+}
+
+.portrait-column {
+  float: left;
+  width: 48%;
+  padding-bottom: 1.25rem;
+}
+
+.portrait {
+  display: block;
+  width: 12.5rem;
+  max-width: 85%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.identity {
+  margin-left: 48%;
+  padding: 0.55rem 0 1.25rem;
+  text-align: center;
+}
+
+.profile-name {
+  margin: 0 0 0.85rem;
+  font-size: 2.05rem;
+  font-weight: bold;
+  letter-spacing: -0.035em;
+  line-height: 1.18;
+}
+
+.profile-name span {
+  font-weight: normal;
+}
+
+header ul, .news ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.degree, .affiliations, .contact, .metadata {
+  color: #5c5c5c;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+}
+
+.degree {
+  margin: 0;
+}
+
+.contact {
+  margin: 0 0 0.12rem;
+}
+
+.identity a {
+  text-decoration-line: none;
+}
+
+.identity a:hover, .identity a:focus-visible {
+  text-decoration-line: underline;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  margin-top: 0.2rem;
+}
+
+.contact-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.75rem;
+  min-height: 2.75rem;
+  border-radius: 0.25rem;
+}
+
+.contact-links img {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+.contact-links a:hover, .contact-links a:focus-visible {
+  box-shadow: inset 0 0 0 1px #0A3458;
+}
+
+/* Four equal menu items share one row. */
+nav {
+  clear: both;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav li {
+  flex: 1;
+  min-width: 0;
+}
+
+nav a {
+  display: flex;
+  align-items: center;
+  justify-content: safe center; /* Keep long labels readable on narrow screens. */
+  box-sizing: border-box;
+  height: 100%;
+  min-height: 2.125rem;
+  padding: 0.25rem 0.125rem;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+}
+
+nav a:link, nav a:visited {
+  color: #262626;
+}
+
+nav a[aria-current="page"] {
+  background-color: #eee;
+  color: #0A3458;
+}
+
+nav a:hover {
+  color: #0A3458;
+  text-decoration: underline;
+}
+
+nav a:active {
+  color: #0A3458;
+  text-decoration: underline double;
+}
+
+nav a:focus-visible {
+  outline-offset: -0.2rem;
+}
+
+/* Page content */
+#main-content {
+  padding-top: 1.9rem;
+}
+
+.bio p {
+  max-width: 74ch;
+  margin: 0;
+  line-height: 1.65;
+}
+
+.bio p + p {
+  margin-top: 1.05rem;
+}
+
+.bio strong {
+  color: #0A3458;
+}
+
+.news {
+  margin-top: 1.85rem;
+  padding-top: 1.35rem;
+  border-top: 1px solid #cfcfcf;
+}
+
+.news li + li {
+  margin-top: 1.2rem;
+}
+
+.event-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Smaller screens */
+@media (max-width: 40em) {
+  body {
+    padding-right: 1.15rem;
+    padding-left: 1.15rem;
+  }
+
+  header {
+    padding-top: 1.75rem;
+  }
+
+  .portrait-column, .identity {
+    padding-bottom: 1.5rem;
+  }
+
+  .portrait {
+    width: 9rem;
+  }
+
+  .profile-name {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 30em) {
+  .portrait-column {
+    float: none;
+    width: 100%;
+    padding-bottom: 0;
+  }
+
+  .portrait {
+    width: 7rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .identity {
+    margin-left: 0;
+  }
+
+  nav a {
+    min-height: 2.75rem;
+    font-size: 0.875rem;
+  }
+
+  #main-content {
+    padding-top: 1.45rem;
+  }
+}
+
+/* Load the project fonts so they also work on a visitor's computer. */
+@font-face {
+  font-family: "Gotham";
+  src: url("fonts/Gotham-Book.otf") format("opentype");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("fonts/Gotham-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("fonts/Gotham-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TikTok Sans Text";
+  src: url("fonts/TikTokSansText-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TikTok Sans Text";
+  src: url("fonts/TikTokSansText-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}

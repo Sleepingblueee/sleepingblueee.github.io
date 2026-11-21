@@ -7,21 +7,43 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Keyboard users can skip the profile and navigation on every page. -->
   <a class="skip-link" href="#main-content">Skip to content</a>
+
   <header>
-    <div class="portrait-column">
-      <img class="portrait" src="Jiaxin.png" width="2259" height="2248" alt="Portrait of Jiaxin (Jimmy) Liu">
+    <!-- The portrait sits beside the name, school links and contact details. -->
+    <div class="photo-column">
+      <img class="photo" src="Jiaxin.png" width="2259" height="2248" alt="Portrait of Jiaxin (Jimmy) Liu">
     </div>
-    <div class="identity">
-      <h1 class="profile-name">Jiaxin <span>(Jimmy)</span> Liu</h1>
-      <p class="contact"><a href="mailto:liujx@bu.edu">liujx@bu.edu</a></p>
+
+    <div class="info-column">
+      <h1 class="name">Jiaxin <span>(Jimmy)</span> Liu</h1>
+      <p class="email">
+        <a href="mailto:liujx@bu.edu">liujx@bu.edu</a>
+      </p>
       <p class="degree">First-year MA student</p>
-      <ul class="affiliations" aria-label="Academic affiliations">
-        <li><a href="https://www.bu.edu/academics/com/programs/emerging-media-studies/ma/" target="_blank" rel="noopener noreferrer">Emerging Media Studies</a></li>
-        <li><a href="https://www.bu.edu/com/" target="_blank" rel="noopener noreferrer">College of Communication</a></li>
-        <li><a href="https://www.bu.edu/" target="_blank" rel="noopener noreferrer">Boston University</a></li>
+
+      <!-- Each school or program name links to its own page. -->
+      <ul class="school-links" aria-label="Academic affiliations">
+        <li>
+          <a href="https://www.bu.edu/academics/com/programs/emerging-media-studies/ma/" target="_blank" rel="noopener noreferrer">
+            Emerging Media Studies
+          </a>
+        </li>
+        <li>
+          <a href="https://www.bu.edu/com/" target="_blank" rel="noopener noreferrer">
+            College of Communication
+          </a>
+        </li>
+        <li>
+          <a href="https://www.bu.edu/" target="_blank" rel="noopener noreferrer">
+            Boston University
+          </a>
+        </li>
       </ul>
-      <ul class="contact-links" aria-label="Contact links">
+
+      <!-- Each icon's alt text names its link for screen readers. -->
+      <ul class="contact-icons" aria-label="Contact links">
         <li>
           <a href="mailto:liujx@bu.edu" title="Email Jiaxin Liu">
             <img src="icons/email.svg" width="28" height="28" alt="Email Jiaxin Liu">
@@ -41,6 +63,7 @@
         </li>
       </ul>
     </div>
+
     <nav aria-label="Main navigation">
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -53,6 +76,7 @@
 
   <main id="main-content">
     <h2>Academic Research</h2>
+
     <p>I’m hard at work organizing my research notes and materials. I’ll share the details here soon.</p>
   </main>
 </body>

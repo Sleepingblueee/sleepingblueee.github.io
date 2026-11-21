@@ -7,21 +7,43 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Keyboard users can skip the profile and navigation on every page. -->
   <a class="skip-link" href="#main-content">Skip to content</a>
+
   <header>
-    <div class="portrait-column">
-      <img class="portrait" src="Jiaxin.png" width="2259" height="2248" alt="Portrait of Jiaxin (Jimmy) Liu">
+    <!-- The portrait sits beside the name, school links and contact details. -->
+    <div class="photo-column">
+      <img class="photo" src="Jiaxin.png" width="2259" height="2248" alt="Portrait of Jiaxin (Jimmy) Liu">
     </div>
-    <div class="identity">
-      <p class="profile-name">Jiaxin <span>(Jimmy)</span> Liu</p>
-      <p class="contact"><a href="mailto:liujx@bu.edu">liujx@bu.edu</a></p>
+
+    <div class="info-column">
+      <h1 class="name">Jiaxin <span>(Jimmy)</span> Liu</h1>
+      <p class="email">
+        <a href="mailto:liujx@bu.edu">liujx@bu.edu</a>
+      </p>
       <p class="degree">First-year MA student</p>
-      <ul class="affiliations" aria-label="Academic affiliations">
-        <li><a href="https://www.bu.edu/academics/com/programs/emerging-media-studies/ma/" target="_blank" rel="noopener noreferrer">Emerging Media Studies</a></li>
-        <li><a href="https://www.bu.edu/com/" target="_blank" rel="noopener noreferrer">College of Communication</a></li>
-        <li><a href="https://www.bu.edu/" target="_blank" rel="noopener noreferrer">Boston University</a></li>
+
+      <!-- Each school or program name links to its own page. -->
+      <ul class="school-links" aria-label="Academic affiliations">
+        <li>
+          <a href="https://www.bu.edu/academics/com/programs/emerging-media-studies/ma/" target="_blank" rel="noopener noreferrer">
+            Emerging Media Studies
+          </a>
+        </li>
+        <li>
+          <a href="https://www.bu.edu/com/" target="_blank" rel="noopener noreferrer">
+            College of Communication
+          </a>
+        </li>
+        <li>
+          <a href="https://www.bu.edu/" target="_blank" rel="noopener noreferrer">
+            Boston University
+          </a>
+        </li>
       </ul>
-      <ul class="contact-links" aria-label="Contact links">
+
+      <!-- Each icon's alt text names its link for screen readers. -->
+      <ul class="contact-icons" aria-label="Contact links">
         <li>
           <a href="mailto:liujx@bu.edu" title="Email Jiaxin Liu">
             <img src="icons/email.svg" width="28" height="28" alt="Email Jiaxin Liu">
@@ -41,6 +63,7 @@
         </li>
       </ul>
     </div>
+
     <nav aria-label="Main navigation">
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -52,17 +75,20 @@
   </header>
 
   <main id="main-content">
-    <h1>Event</h1>
+    <h2>Event</h2>
+
     <section aria-labelledby="club-title">
-      <h2 id="club-title">Japanese Culture Club</h2>
+      <h3 id="club-title">Japanese Culture Club</h3>
+
       <p>
         As an undergraduate, I served as president of the Japanese Culture Club for three years,
         designing and hosting over 30 cultural events. I met some of the most important people
         in my life there, and I will always treasure that experience. Wherever I am, I hope to
         keep exploring the Japanese culture I love.
       </p>
+
       <img class="event-photo" src="event.jpg" width="1920" height="1080"
-           alt="Collage of Japanese Culture Club members at stage performances, workshops, and group gatherings.">
+           alt="Japanese Culture Club members at performances and workshops.">
     </section>
   </main>
 </body>

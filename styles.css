@@ -18,7 +18,7 @@ p {
   margin: 0 0 0.9em;
 }
 
-h1, h2, h3, nav a {
+h1, h2, h3, nav a, .profile-name {
   font-family: "Gotham", "Segoe UI", Arial, sans-serif;
 }
 
@@ -83,18 +83,19 @@ a:focus-visible {
 }
 
 
+/* The paired class names also fit pages saved before the layout update. */
 /* Profile photo on the left */
 header {
   padding-top: 1.9rem;
 }
 
-.photo-column {
+.photo-column, .portrait-column {
   float: left;
   width: 48%;
   padding-bottom: 1.25rem;
 }
 
-.photo {
+.photo, .portrait {
   display: block;
   width: 12.5rem;
   max-width: 85%;
@@ -105,13 +106,13 @@ header {
 
 
 /* The left margin leaves room for the photo beside the name and school. */
-.info-column {
+.info-column, .identity {
   margin-left: 48%;
   padding: 0.55rem 0 1.25rem;
   text-align: center;
 }
 
-.name {
+.name, .profile-name {
   margin: 0 0 0.85rem;
   font-size: 2.05rem;
   font-weight: bold;
@@ -119,7 +120,7 @@ header {
   line-height: 1.18;
 }
 
-.name span {
+.name span, .profile-name span {
   font-weight: normal;
 }
 
@@ -129,13 +130,14 @@ header ul, .news ul {
   list-style: none;
 }
 
-.email, .degree, .school-links, .news-date {
+.email, .degree, .school-links, .news-date,
+.contact, .affiliations, .metadata {
   color: #5c5c5c;
   font-size: 0.9375rem;
   line-height: 1.5;
 }
 
-.email {
+.email, .contact {
   margin: 0 0 0.12rem;
 }
 
@@ -143,28 +145,29 @@ header ul, .news ul {
   margin: 0;
 }
 
-.info-column a {
+.info-column a, .identity a {
   text-decoration: none;
 }
 
-.info-column a:hover, .info-column a:focus-visible {
+.info-column a:hover, .info-column a:focus-visible,
+.identity a:hover, .identity a:focus-visible {
   text-decoration: underline;
 }
 
 
 /* The link around each icon is a little bigger than the picture. */
-.contact-icons {
+.contact-icons, .contact-links {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 0.2rem;
 }
 
-.contact-icons li {
+.contact-icons li, .contact-links li {
   margin: 0 0.125rem;
 }
 
-.contact-icons a {
+.contact-icons a, .contact-links a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -173,12 +176,13 @@ header ul, .news ul {
   border-radius: 0.25rem;
 }
 
-.contact-icons img {
+.contact-icons img, .contact-links img {
   width: 1.75rem;
   height: 1.75rem;
 }
 
-.contact-icons a:hover, .contact-icons a:focus-visible {
+.contact-icons a:hover, .contact-icons a:focus-visible,
+.contact-links a:hover, .contact-links a:focus-visible {
   box-shadow: inset 0 0 0 1px #0A3458;
 }
 
@@ -240,17 +244,17 @@ nav a:focus-visible {
 }
 
 /* Keep the long introduction a little narrower than the menu. */
-.about p {
+.about p, .bio p {
   max-width: 74ch;
   margin: 0;
   line-height: 1.65;
 }
 
-.about p + p {
+.about p + p, .bio p + p {
   margin-top: 1.05rem;
 }
 
-.about strong {
+.about strong, .bio strong {
   color: #0A3458;
 }
 
@@ -282,33 +286,33 @@ nav a:focus-visible {
     padding-top: 1.75rem;
   }
 
-  .photo-column, .info-column {
+  .photo-column, .info-column, .portrait-column, .identity {
     padding-bottom: 1.5rem;
   }
 
-  .photo {
+  .photo, .portrait {
     width: 9rem;
   }
 
-  .name {
+  .name, .profile-name {
     font-size: 1.75rem;
   }
 }
 
 /* On a phone, stack the photo above the school and contact details. */
 @media (max-width: 30em) {
-  .photo-column {
+  .photo-column, .portrait-column {
     float: none;
     width: 100%;
     padding-bottom: 0;
   }
 
-  .photo {
+  .photo, .portrait {
     width: 7rem;
     margin-bottom: 0.8rem;
   }
 
-  .info-column {
+  .info-column, .identity {
     margin-left: 0;
   }
 
